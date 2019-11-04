@@ -21,13 +21,14 @@ In this part you will try to train a network via imitation, and consequently tes
 
 ## Learning imitation learning {status=ready}
 
-Placeholder
-
 #### Imitation Learning {#exercise:imitation_learning}
 
-Clone the repository:
+For this exercise, you will get a repository that takes care of creating the environment for you.
+You will be required to modify a Jupyter Notebook file only, as the rest is fairly complex.
 
-    laptop $ git clone --recursive git@github.com:gibernas/lra.git
+Clone the template repository:
+
+    laptop $ git clone --recursive git@github.com:duckietown-ethz/lra.git
 
 The `--recursive` option is important to also clone submodules, if you forgot it, run
 
@@ -40,4 +41,8 @@ Inside the repository, requirements
     laptop $ docker-compose build
     laptop $ docker-compose up
 
-A lot of text will pop up, connect to the notebook server. Once connected enter in the notebook directory and open the file `01-duckietown-imitation-learning-ipynb`, then follow the instructions in it.
+Note: The build command, will require a lot of time, but you only need to build it once.
+
+A lot of text will pop up, connect to the notebook server, to do this, you should see an address of the form `http://127.0.0.1:8888/...`, just open the link in a web browser. Once connected enter in the notebook directory and open the file `01-duckietown-imitation-learning-ipynb`, then follow the instructions in it.
+
+When you interrupt the containers, press <kbd>Ctrl</kbd>-<kbd>C</kbd> then wait for it to gracefully stop. This will prevent many problems.
