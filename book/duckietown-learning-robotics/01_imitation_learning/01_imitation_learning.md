@@ -45,4 +45,4 @@ Note: The build command, will require a lot of time, but you only need to build 
 
 A lot of text will pop up, connect to the notebook server, to do this, you should see an address of the form `http://127.0.0.1:8888/...`, just open the link in a web browser. Once connected enter in the notebook directory and open the file `01-duckietown-imitation-learning-ipynb`, then follow the instructions in it.
 
-When you interrupt the containers, press <kbd>Ctrl</kbd>-<kbd>C</kbd> then wait for it to gracefully stop. This will prevent many problems.
+When you want to interrupt the containers, press <kbd>Ctrl</kbd>-<kbd>C</kbd> then wait for it to gracefully stop. This will prevent many problems.
