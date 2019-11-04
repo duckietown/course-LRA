@@ -28,7 +28,7 @@ You will be required to modify a Jupyter Notebook file only, as the rest is fair
 
 Clone the template repository:
 
-    laptop $ git clone --recursive git@github.com:duckietown-ethz/lra.git
+    laptop $ git clone --recursive git@github.com:duckietown-ethz/lra-exercise.git
 
 The `--recursive` option is important to also clone submodules, if you forgot it, run
 
