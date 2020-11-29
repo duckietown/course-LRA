@@ -121,6 +121,7 @@ Do note that even though your dataset images have to be of size 224x224, you are
 or bigger images to your model. If you wish to do so, simply resize the images at train/test/validation time.
 
 **Hint:** You might want to take a look at the following OpenCV functions:
+
 - [`findContours`](https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga17ed9f5d79ae97bd4c7cf18403e1689a), and its `hierarchy` output which can be handy for filtering inner contours;
 - [`boundingRect`](https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga103fcbda2f540f3ef1c042d6a9b35ac7);
 - [`morphologyEx`](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#ga67493776e3ad1a3df63883829375201f) with a suitable [structuring element](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#gac342a1bb6eabf6f55c803b09268e36dc) and [morphological operation](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#ga7be549266bad7b2e6a04db49827f9f32);
@@ -180,9 +181,9 @@ Additionally, weirdly enough, the tutorial expects you to have some files that i
 
 Perhaps having a look (and a download) at these links might save you some time:
 
-- https://github.com/pytorch/vision/blob/master/references/detection/engine.py
-- https://github.com/pytorch/vision/blob/master/references/detection/coco_utils.py
-- https://github.com/pytorch/vision/blob/master/references/detection/transforms.py
+- [https://github.com/pytorch/vision/blob/master/references/detection/engine.py](engine.py)
+- [https://github.com/pytorch/vision/blob/master/references/detection/coco_utils.py](coco_utils.py)
+- [https://github.com/pytorch/vision/blob/master/references/detection/transforms.py](transforms.py)
 
 You can also safely remove the `evaluate` call that the tutorial uses, and it will save you the headache
 of installing most of the `coco_utils` and `coco_evaluate` dependencies.
