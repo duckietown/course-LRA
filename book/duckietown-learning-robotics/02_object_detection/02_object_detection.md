@@ -129,9 +129,7 @@ or bigger images to your model. If you wish to do so, simply resize the images a
 
 **Tip:** You might also want to make two separate datasets: one for training, and one for validation. Depending on your model, around 2000 samples for training should probably be more than enough. 
 
-### Evaluation
-
-We will manually look at part of your dataset and make sure that your bounding boxes match with the images.
+**Evaluation:** We will manually look at part of your dataset and make sure that your bounding boxes match with the images.
 
 ## Step 3: Model training
 
@@ -144,9 +142,7 @@ The creators of this exercise do have a soft spot for Pytorch, so we'll use it a
 This being ML, and ML being a booming field dominated by blogposts and online 
 tutorials, it would be folly for us not to expect you to [Google "how 2 obj
 detection pytorch"](http://letmegooglethat.com/?q=how+2+obj+detection+pytorch). Let us save you some time. 
-Here's the first result: 
-[pytorch's object detection tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)
-. We'll loosely follow that template.
+Here's the first result: [pyTorch's object detection tutorial](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html). We'll loosely follow that template.
 
 First, define your `Dataset` class. Like in the link, for any given image index, it should provide:
 
@@ -182,9 +178,9 @@ Additionally, weirdly enough, the tutorial expects you to have some files that i
 
 Perhaps having a look (and a download) at these links might save you some time:
 
-- [https://github.com/pytorch/vision/blob/master/references/detection/engine.py](engine.py)
-- [https://github.com/pytorch/vision/blob/master/references/detection/coco_utils.py](coco_utils.py)
-- [https://github.com/pytorch/vision/blob/master/references/detection/transforms.py](transforms.py)
+- [engine.py](https://github.com/pytorch/vision/blob/master/references/detection/engine.py)
+- [coco_utils.py](https://github.com/pytorch/vision/blob/master/references/detection/coco_utils.py)
+- [transforms.py](https://github.com/pytorch/vision/blob/master/references/detection/transforms.py)
 
 You can also safely remove the `evaluate` call that the tutorial uses, and it will save you the headache
 of installing most of the `coco_utils` and `coco_evaluate` dependencies.
