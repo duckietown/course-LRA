@@ -2,7 +2,8 @@
 
 Excerpt: Train a neural network to recognize objects in Duckietown.
 
-In this part you will try to train a network via imitation, and consequently test its performance.
+In this exercise you will train an object detection neural network. First, you will create your own training dataset with the Duckietown simulator. 
+By using the segmentation maps that it outputs you will be able to label your dataset automatically. Then, you will adapt a pre-trained model to the task of detecting various classes of objects in the simulator. You will be graded on the quality of the dataset you made and the performance of your neural network model.
 
 <div class='requirements' markdown='1'>
 
@@ -126,7 +127,7 @@ or bigger images to your model. If you wish to do so, simply resize the images a
 - [`boundingRect`](https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html#ga103fcbda2f540f3ef1c042d6a9b35ac7);
 - [`morphologyEx`](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#ga67493776e3ad1a3df63883829375201f) with a suitable [structuring element](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#gac342a1bb6eabf6f55c803b09268e36dc) and [morphological operation](https://docs.opencv.org/3.4/d4/d86/group__imgproc__filter.html#ga7be549266bad7b2e6a04db49827f9f32);
 
-**Tip:** You might also want to make two separate datasets: one for training, and one for validation.
+**Tip:** You might also want to make two separate datasets: one for training, and one for validation. Depending on your model, around 2000 samples for training should probably be more than enough. 
 
 ### Evaluation
 
@@ -149,7 +150,7 @@ Here's the first result:
 
 First, define your `Dataset` class. Like in the link, for any given image index, it should provide:
 
-- The bounding boxes for each class in each image (contrarily to the tutorial, you calculated this earlier in the Data collection part of this exercise);
+- The bounding boxes for each class in each image (contrary to the tutorial, you calculated this earlier in the Data collection part of this exercise);
 - The class labels for each bounding box;
 - The normal, non-segmented image;
 - An ID for the image (you should just use the index of the `.npz`).
