@@ -1,4 +1,4 @@
-# Object detection {#part:lra_object_detection status=ready}
+# Object detection {#lra_object_detection status=ready}
 
 Excerpt: Train a neural network to recognize objects in Duckietown.
 
