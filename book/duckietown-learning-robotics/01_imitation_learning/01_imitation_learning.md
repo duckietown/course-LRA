@@ -1,4 +1,4 @@
-# [LRA1] Imitation Learning {#part:lra-1 status=draft}
+# Imitation Learning {#part:lra-1 status=draft}
 
 Excerpt: Train your network by imitation.
 
