@@ -239,3 +239,7 @@ We will evaluate this section in two ways:
 
 3. We will evaluate your model by using the same setting as in the `eval` directory but with a different dataset. We will first try to evaluate your model on a GPU by running: `make eval-gpu SUB={YOUR_IMAGE_NAME}` in the `eval` directory.
  However, if it does not work (incompatible hardware, wrong CUDA version, etc.) we will also attempt using a CPU alone. Hence, as mentioned above, make sure that your code runs without a GPU too. To evaluate without a GPU we will use the `make eval-cpu SUB={YOUR_IMAGE_NAME}` command. You can use the same two commands to verify that your image complies with the API we expect.
+ 
+4. The above two commands will evaluate your code and will provide a final mAP value. You need to **score at least 80% mAP** for us to consider your model successful.
+
+5. You will also have to provide the first 100 samples from the dataset you created.
