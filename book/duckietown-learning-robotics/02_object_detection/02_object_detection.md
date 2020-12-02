@@ -110,9 +110,9 @@ The labels must be an `np.array` indexed the same way as the boxes (so `labels[i
 We want to be able to read your `.npz`, so you *must* respect this format:
 
 ```python
-img = data[f"arr_{0}"]
-boxes = data[f"arr_{1}"]
-classes = data[f"arr_{2}"]
+img = data["arr_0}"]
+boxes = data["arr_1"]
+classes = data["arr_2"]
 ```
     
 Additionally, each `.npz` file must be identified by a number. So, if your dataset contains 1000 items, you'll have
