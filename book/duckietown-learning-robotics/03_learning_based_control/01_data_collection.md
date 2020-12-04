@@ -109,4 +109,10 @@ Hint: the data is imported as a pandas DataFrame. This can easily be sliced, tru
 
 You are free to use any model you want for training.  The goal is to use regression to find $A$ and $B$. One way to do this is to use `sklearn.linear_model` library to initialize a model.
 
-In `sklearn` models follow the convetion of X,Y. To train
+In `sklearn` models follow the convention of X,Y, where X represents the training data, and Y the outputs. The model you are trying to predict is shown below: Keep in mind that we are fitting a linear model.
+
+$\begin{bmatrix} d_{t+1} \ \varphi_{t+1} \end{bmatrix} = \begin{bmatrix} A& | B \end{bmatrix} \begin{bmatrix} d_t \ \varphi_t \ u \end{bmatrix} $
+
+Deliverable: Submit your A and B matrices.
+
+Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data pre-processing you might have performed. 
