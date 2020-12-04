@@ -136,6 +136,8 @@ Deliverable: A short video (~5-10 sec) of your simulated Duckiebot running on yo
 
 Deliverable: Your Q and R matrices
 
+Deliverable: Your K matrix
+
 Deliverable: Question: How does the performance of your controller compare to the controller you used to collect data initially?
 
 Deliverable: Question: Are you penalizing control input, why?
