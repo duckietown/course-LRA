@@ -1,4 +1,4 @@
-# Learning-based Control - Data Collection {#lra2-data-collection status=draft}
+# Learning-based Control - Data Collection {#lra2-model-based-learning status=draft}
 
 Excerpt: Collect Duckiebot data to train a model of the Duckiebot.
 
@@ -115,4 +115,24 @@ $\begin{bmatrix} d_{t+1} \ \varphi_{t+1} \end{bmatrix} = \begin{bmatrix} A& | B 
 
 Deliverable: Submit your A and B matrices.
 
-Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data pre-processing you might have performed. 
+Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data pre-processing you might have performed.
+
+## Linear Quadratic Regulator - Control
+
+Now that you have learned the model of the Duckiebot using machine learning, the objective is to implement a controller to test how accurate the model prediction is. To do this you will use a Linear Quadratic Regulator (LQR).
+
+The LQR formulation is shown below:
+
+\[
+J = \int_{0}^{\inf}(\vec{x}^T Q \vec{x} + \vec{u}^T R \vec{u}) \,dt
+\]
+
+The LQR is an optimization problem that penalizes the state and control inputs according to the matrices $Q$ and $R$, respectively. You will need to solve the discrete [Algebraic Riccati Equation](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.linalg.solve_discrete_are.html)
+
+Deliverable: A short video (~5-10 sec) of your simulated Duckiebot running on your LQR controller.
+
+Deliverable: Your Q and R matrices
+
+Deliverable: Question: Are you penalizing control input, why?
+
+Deliverable: Question: Are you penalizing the states, why?
