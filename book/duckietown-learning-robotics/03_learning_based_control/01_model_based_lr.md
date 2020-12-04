@@ -129,9 +129,14 @@ J = \int_{0}^{\inf}(\vec{x}^T Q \vec{x} + \vec{u}^T R \vec{u}) \,dt
 
 The LQR is an optimization problem that penalizes the state and control inputs according to the matrices $Q$ and $R$, respectively. You will need to solve the discrete [Algebraic Riccati Equation](https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.linalg.solve_discrete_are.html)
 
+The solution of the ARE can be used to obtain the gains. Compute the gain matrix K and implement it in your control. Run the simulator again, and record your screen for your Duckiebot running on your custom model-based-learning controller.
+
+
 Deliverable: A short video (~5-10 sec) of your simulated Duckiebot running on your LQR controller.
 
 Deliverable: Your Q and R matrices
+
+Deliverable: Question: How does the performance of your controller compare to the controller you used to collect data initially?
 
 Deliverable: Question: Are you penalizing control input, why?
 
