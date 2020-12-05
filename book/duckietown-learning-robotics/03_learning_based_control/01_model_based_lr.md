@@ -31,16 +31,11 @@ We will be working in the Duckietown Gym. Gym-Duckietown is a simulator for the 
 
 We will run the exercise directly from a Jupyter Notebook. To run, follow the next steps:
 
-    laptop $ git clone https://github.com/duckietown-ethz/ilqr-exercise
+    laptop $ git clone https://github.com/duckietown-ethz/lqr-exercise.git
 
-    laptop $ cd ilqr-exercise
+    laptop $ cd lqr-exercise
 
     laptop $ dts exercises notebooks
-
-
-To run the Docker image, run the following command in your local machine.
-
-    laptop $ Docker run..... #TODO Vincenzo add command.
 
 Navigate to the `gym-duckietown/exercises/LRA` directory. This is where you will develop your solution. You will find Jupyter-notebooks for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
 
