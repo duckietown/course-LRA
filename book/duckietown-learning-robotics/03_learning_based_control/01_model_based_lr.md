@@ -113,7 +113,7 @@ data = lra.loadData("model_data.csv")
 
 Hint: the data is imported as a pandas DataFrame. This can easily be sliced, truncated, sorted, and allows for other operations. You should look at the `.iloc[]` and `.loc[]` methods to facilitate data cleaning and pre-processing.
 
-NOTE: Note that an important factor is that the control signal should be bound by a magnitude of 1. $$|u| < 1 $$
+NOTE: Note that an important factor is that the control signal should be bound by a magnitude of 1. $$|u| \leq 1 $$
 
 ### Model training
 
