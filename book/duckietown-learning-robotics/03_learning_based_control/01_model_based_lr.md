@@ -25,7 +25,7 @@ For this task, we will be using the Duckietown Gym to run standard lane followin
   - $u$ is the steering input (in radians per second).
 
 
-## Duckietown Gym
+## Duckietown Gym - Duckietown Exercises Notebook
 
 We will be working in the Duckietown Gym. Gym-Duckietown is a simulator for the Duckietown Universe, written in pure Python/OpenGL (Pyglet). It places your agent, a Duckiebot, inside of an instance of a Duckietown: a loop of roads with turns, intersections, obstacles, Duckie pedestrians, and other Duckiebots. If not yet familiar, please read the docs directly on the [Gym-Duckietown](https://github.com/duckietown/gym-duckietown) to get a better understanding about working with the simulator.
 
