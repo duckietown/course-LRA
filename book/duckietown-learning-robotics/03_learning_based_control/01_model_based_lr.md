@@ -39,6 +39,8 @@ Once installed, navigate to the `gym-duckietown/exercises/LRA` directory. This i
 
 ## Data collection
 
+### Collecting the data using default Controller
+
 The first task is to collect the state and control input data. For this, you will need to create an Gym instance of the Duckietown Environment. An example of this setup procedure is shown below. The function `env.render()` displays a graphical representation of the environment to your screen.  
 
 ```python
@@ -80,6 +82,12 @@ d,phi,u
 ...
 ```
 
+### Collecting the data with random control signals
+
+Repeat the process you just did, but this time use random control signals that are uncorrelated to the states. Run the simulation and record the states, and control input.
+Save the file for your random control input as a separate `.csv` file. 
+
+
 ## Model Training
 
 The next step is to use the data you collected to develop a linear model of the Duckiebot. The model can be written as follows:
@@ -105,6 +113,8 @@ data = lra.loadData("model_data.csv")
 
 Hint: the data is imported as a pandas DataFrame. This can easily be sliced, truncated, sorted, and allows for other operations. You should look at the `.iloc[]` and `.loc[]` methods to facilitate data pre-processing.
 
+#TODO Saturation of the control signal - magnitude is |u| < 1.
+
 ### Model training
 
 You are free to use any model you want for training.  The goal is to use regression to find $A$ and $B$. One way to do this is to use `sklearn.linear_model` library to initialize a model.
@@ -113,7 +123,13 @@ In `sklearn` models follow the convention of X,Y, where X represents the trainin
 
 $\begin{bmatrix} d_{t+1} \ \varphi_{t+1} \end{bmatrix} = \begin{bmatrix} A& | B \end{bmatrix} \begin{bmatrix} d_t \ \varphi_t \ u \end{bmatrix} $
 
-Deliverable: Submit your A and B matrices.
+Deliverable: Submit your A and B matrices for the data collected using the PID controller.
+
+Deliverable: Submit your A and B matrices for the data collected using random control signals.
+
+Deliverable: What are the advantages and disadvantages of using the data collected using the PID controller?
+
+Deliverable: What are the advantages and disadvantages of using the data collected using the random control signals?
 
 Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data pre-processing you might have performed.
 
