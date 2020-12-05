@@ -29,13 +29,20 @@ For this task, we will be using the Duckietown Gym to run standard lane followin
 
 We will be working in the Duckietown Gym. Gym-Duckietown is a simulator for the Duckietown Universe, written in pure Python/OpenGL (Pyglet). It places your agent, a Duckiebot, inside of an instance of a Duckietown: a loop of roads with turns, intersections, obstacles, Duckie pedestrians, and other Duckiebots. If not yet familiar, please read the docs directly on the [Gym-Duckietown](https://github.com/duckietown/gym-duckietown) to get a better understanding about working with the simulator.
 
-For this exercise, however, we will be using a containerized docker image with everything you need to collect the data, train the machine learning model, and develop your own controller.
+We will run the exercise directly from a Jupyter Notebook. To run, follow the next steps:
+
+    laptop $ git clone https://github.com/duckietown-ethz/ilqr-exercise
+
+    laptop $ cd ilqr-exercise
+
+    laptop $ dts exercises notebooks
+
 
 To run the Docker image, run the following command in your local machine.
 
     laptop $ Docker run..... #TODO Vincenzo add command.
 
-Once installed, navigate to the `gym-duckietown/exercises/LRA` directory. This is where you will develop your solution. You will find Jupyter-notebooks for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
+Navigate to the `gym-duckietown/exercises/LRA` directory. This is where you will develop your solution. You will find Jupyter-notebooks for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
 
 ## Data collection
 
