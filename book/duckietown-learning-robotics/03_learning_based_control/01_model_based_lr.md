@@ -85,7 +85,7 @@ d,phi,u
 ### Collecting the data with random control signals
 
 Repeat the process you just did, but this time use random control signals that are uncorrelated to the states. Run the simulation and record the states, and control input.
-Save the file for your random control input as a separate `.csv` file. 
+Save the file for your random control input as a separate `.csv` file.
 
 
 ## Model Training
@@ -100,7 +100,7 @@ Where,
 
 The goal is to find the matrices $A$ and $B$.
 
-### Data Pre-processing
+### Data Cleaning
 
 Not all the collected data might be relevant, it is your task now to determine what data to include and why.
 
@@ -111,9 +111,9 @@ lra = LRA2_HELPER()
 data = lra.loadData("model_data.csv")
 ```
 
-Hint: the data is imported as a pandas DataFrame. This can easily be sliced, truncated, sorted, and allows for other operations. You should look at the `.iloc[]` and `.loc[]` methods to facilitate data pre-processing.
+Hint: the data is imported as a pandas DataFrame. This can easily be sliced, truncated, sorted, and allows for other operations. You should look at the `.iloc[]` and `.loc[]` methods to facilitate data cleaning and pre-processing.
 
-#TODO Saturation of the control signal - magnitude is |u| < 1.
+NOTE: Note that an important factor is that the control signal should be bound by a magnitude of 1. $$|u| < 1 $$
 
 ### Model training
 
