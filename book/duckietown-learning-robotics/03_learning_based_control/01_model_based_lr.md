@@ -95,6 +95,12 @@ d,phi,u
 Repeat the process you just did, but this time use random control signals that are uncorrelated to the states. Run the simulation and record the states, and control input.
 Save the file for your random control input as a separate `.csv` file.
 
+A successful run will output the video of your Duckiebot moving in the simulation. A sample output can be seen below:
+
+<figure id="pid-simulator">
+    <figcaption>Example video from data collection process with PID control </figcaption>
+    <dtvideo src="vimeo:477772450"/>
+</figure>
 
 ## Model Training
 
