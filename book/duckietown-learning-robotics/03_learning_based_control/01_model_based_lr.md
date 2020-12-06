@@ -35,6 +35,8 @@ We will run the exercise directly from a Jupyter Notebook. To run, follow the ne
 
     laptop $ cd lqr-exercise
 
+    laptop $ pip3 install -r requirements.txt
+
     laptop $ dts exercises notebooks
 
 This is where you will develop your solution. You will find a Jupyter-notebook for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
