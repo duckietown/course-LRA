@@ -1,4 +1,4 @@
-# Learning-based Control - Data Collection {#lra2-model-based-learning status=draft}
+# Learning-based Control - Data Collection {#lra2-model-based-learning status=ready}
 
 Excerpt: Collect Duckiebot data to train a model of the Duckiebot.
 
