@@ -31,13 +31,17 @@ We will be working in the Duckietown Gym. Gym-Duckietown is a simulator for the 
 
 We will run the exercise directly from a Jupyter Notebook. To run, follow the next steps:
 
-    laptop $ git clone https://github.com/duckietown-ethz/lqr-exercise.git
+    laptop $ git clone --recursive https://github.com/duckietown-ethz/lqr-exercise.git
 
     laptop $ cd lqr-exercise
 
     laptop $ dts exercises notebooks
 
-Navigate to the `gym-duckietown/exercises/LRA` directory. This is where you will develop your solution. You will find Jupyter-notebooks for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
+This is where you will develop your solution. You will find a Jupyter-notebook for model training and sample collection. In addition, the `lraClass.py` file has been included to facilitate loading and saving your data.
+
+Troubleshooting: If you forgot to do `--recursive` you can type `git submodule init` and then `git submodule update` from the exercise root folder.
+
+Troubleshooting: You might need to install the image display package ffmpeg, you can do this by typing `sudo apt-get install ffmpeg`.
 
 ## Data collection
 
@@ -46,10 +50,10 @@ Navigate to the `gym-duckietown/exercises/LRA` directory. This is where you will
 The first task is to collect the state and control input data. For this, you will need to create an Gym instance of the Duckietown Environment. An example of this setup procedure is shown below. The function `env.render()` displays a graphical representation of the environment to your screen.  
 
 ```python
-from gym_duckietown.envs import DuckietownEnv
+from simulator.src.gym_duckietown.simulator import Simulator
 #   Create the environment
 
-env = DuckietownEnv(
+env = Simulator(
     map_name = "udem1",
     domain_rand = False,
     draw_bbox = False
