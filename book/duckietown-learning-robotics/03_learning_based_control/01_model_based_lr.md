@@ -99,7 +99,7 @@ A successful run will output the video of your Duckiebot moving in the simulatio
 
 <figure id="pid-simulator">
     <figcaption>Example video from data collection process with PID control </figcaption>
-    <dtvideo src="vimeo:477772450"/>
+    <dtvideo src="vimeo:487881974"/>
 </figure>
 
 ## Model Training
@@ -145,7 +145,7 @@ Deliverable: What are the advantages and disadvantages of using the data collect
 
 Deliverable: What are the advantages and disadvantages of using the data collected using the random control signals?
 
-Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data pre-processing you might have performed.
+Deliverable: Is all the data collected useful? Explain why or why not. In addition, elaborate on any type of data cleaning you might have performed.
 
 ## Linear Quadratic Regulator - Control
 
