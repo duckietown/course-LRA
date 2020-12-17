@@ -109,8 +109,8 @@ The next step is to use the data you collected to develop a linear model of the 
 $$ \vec{X}_{t+1} = A\vec{X}_t+B\vec{u}_t $$
 
 Where,
-* $ \vec{X}_{t+1} \in \mathcal{R}^{2x2} $
-* $ \vec{u}_{t} \in \mathcal{R}^{2x1} $
+* $ A \in \mathcal{R}^{2x2} $
+* $ B \in \mathcal{R}^{2x1} $
 
 The goal is to find the matrices $A$ and $B$.
 
