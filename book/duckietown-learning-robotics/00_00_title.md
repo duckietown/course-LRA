@@ -1,1 +1,1 @@
-# Learning-based Robotics Architectures using Duckietown {#book:LRA status=ready}
+# Learning-based Robotics Architectures using Duckietown {#book:book status=ready}
